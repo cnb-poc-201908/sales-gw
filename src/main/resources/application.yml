@@ -120,5 +120,10 @@ zuul:
         serviceId: bmw-sm
         stripPrefix: false
         sensitiveHeaders:
+    bmw-stock-service:
+        path: /stock/**
+        serviceId: bmw-stock
+        stripPrefix: false
+        sensitiveHeaders:
 
 
