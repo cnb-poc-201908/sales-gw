@@ -125,5 +125,10 @@ zuul:
         serviceId: bmw-stock
         stripPrefix: false
         sensitiveHeaders:
+    bmw-contract-service:
+        path: /contract/**
+        serviceId: bmw-contract
+        stripPrefix: false
+        sensitiveHeaders:
 
 
