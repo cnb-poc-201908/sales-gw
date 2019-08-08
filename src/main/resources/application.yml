@@ -44,8 +44,8 @@ hystrix:
 swagger.enabled: true
 
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 
 zuul:
   ignoredServices: '*'
@@ -59,7 +59,16 @@ zuul:
         serviceId: bmw-sm
         stripPrefix: false
         sensitiveHeaders:
-
+    bmw-stock-service:
+        path: /stock/**
+        serviceId: bmw-stock
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-contract-service:
+        path: /contract/**
+        serviceId: bmw-contract
+        stripPrefix: false
+        sensitiveHeaders:
 ---
 
 spring:
@@ -128,6 +137,11 @@ zuul:
     bmw-contract-service:
         path: /contract/**
         serviceId: bmw-contract
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-retail:
+        path: /retail/**
+        serviceId: bmw-retail
         stripPrefix: false
         sensitiveHeaders:
 
