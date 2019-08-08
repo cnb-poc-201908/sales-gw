@@ -69,6 +69,16 @@ zuul:
         serviceId: bmw-contract
         stripPrefix: false
         sensitiveHeaders:
+    bmw-contract-template-service:
+        path: /contract-template/**
+        serviceId: bmw-contract-template
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-retail:
+        path: /retail/**
+        serviceId: bmw-retail
+        stripPrefix: false
+        sensitiveHeaders:
 ---
 
 spring:
@@ -137,6 +147,11 @@ zuul:
     bmw-contract-service:
         path: /contract/**
         serviceId: bmw-contract
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-contract-template-service:
+        path: /contract-template/**
+        serviceId: bmw-contract-template
         stripPrefix: false
         sensitiveHeaders:
     bmw-retail:
