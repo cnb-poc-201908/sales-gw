@@ -74,7 +74,7 @@ zuul:
         serviceId: bmw-contract-template
         stripPrefix: false
         sensitiveHeaders:
-    bmw-retail:
+    bmw-retail-service:
         path: /retail/**
         serviceId: bmw-retail
         stripPrefix: false
@@ -154,7 +154,7 @@ zuul:
         serviceId: bmw-contract-template
         stripPrefix: false
         sensitiveHeaders:
-    bmw-retail:
+    bmw-retail-service:
         path: /retail/**
         serviceId: bmw-retail
         stripPrefix: false
