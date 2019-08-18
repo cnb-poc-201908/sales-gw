@@ -79,6 +79,26 @@ zuul:
         serviceId: bmw-retail
         stripPrefix: false
         sensitiveHeaders:
+    bmw-order-service:
+        path: /order/**
+        serviceId: bmw-order
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-model-service:
+        path: /model/**
+        serviceId: bmw-model
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-sales-dashboard-service:
+        path: /sales-dashboard/**
+        serviceId: bmw-sales-dashboard
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-engine-service: 
+        path: /engine/**
+        serviceId: bmw-salesengine
+        stripPrefix: false
+        sensitiveHeaders:
 ---
 
 spring:
@@ -172,5 +192,10 @@ zuul:
     bmw-sales-dashboard-service:
         path: /sales-dashboard/**
         serviceId: bmw-sales-dashboard
+        stripPrefix: false
+        sensitiveHeaders:
+    bmw-engine-service: 
+        path: /engine/**
+        serviceId: bmw-salesengine
         stripPrefix: false
         sensitiveHeaders:
